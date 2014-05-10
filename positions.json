@@ -1,0 +1,28 @@
+[
+	{"title": "Front-End Web Developer",
+		"organization": "The Motley Fool",
+		"startDate": "2010-09-01T04:00:00.000Z",
+		"endDate": "2014-02-01T05:00:00.000Z",
+		"projects": [{"name": "CMS",
+			"skills": ["Django", "jQuery"],
+			"description": "Developed front-end code for Django-based internal content management system"},
+		{"name": "Folios",
+			"skills": ["Angular", "Sass", "REST"],
+			"description": "Developed front-end code for AngularJS-based portfolio management application"}]},
+
+	{"title": "Freelance Rails Developer",
+		"organization": "CouponsToGo.com/American Direct Mail Marketing",
+		"startDate": "2010-02-01T05:00:00.000Z",
+		"endDate": "2011-03-01T05:00:00.000Z",
+		"projects": [{"name": "(General)",
+			"skills": ["Rails", "Sass", "Prototype", "960 Grids"],
+			"description": "Developed front-end code for Django-based internal content management system"}]},
+
+	{"title": "Director of User Experience",
+		"organization": "Weddzilla",
+		"startDate": "2009-08-01T04:00:00.000Z",
+		"endDate": "2010-02-01T05:00:00.000Z",
+		"projects": [{"name": "weddzilla.com",
+			"skills": ["Rails", "Sass", "PayPal API", "Facebook API", "Google Maps API"],
+			"description": "Managed a team of 3 developers, the interactive design process, and the deployment of a social platform for connecting wedding vendors with wedding planners (http://weddzilla.com). Converted business requirements into user stories, collaborated with the business owner on their prioritization, and conducted daily scrum meetings to gauge developer progress and identify blockers. Contributed to Rails development and architected application from front-end to its stack, including domain modeling, background jobs, and third-party API integration (PayPal merchant account, Facebook, Google Maps), et cetera."}]}
+]

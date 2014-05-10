@@ -1,0 +1,59 @@
+<!-- todo:
+	Add icons to display thumbnails (that are links to URLs or at least screenshots) of projects
+-->
+
+<!doctype html>
+<html lang="en" ng-app="resumeApp">
+<head>
+	<meta charset="utf-8"/>
+	<title>David Rivers — Front-End Developer</title>
+	<link href="resume.css" rel="stylesheet"/>
+	<script src="lib/angular.min.js"></script>
+	<script src="controllers.js"></script>
+</head>
+<body>
+	<header class="header">
+		<nav ng-controller="NavigationController" class="main-nav">
+
+			<ul>
+				<li ng-repeat="pos in positions">
+					<a href="#">{{pos.title}}</a>
+				</li>
+			</ul>
+
+			<!--<nav class="nav-nav">
+				<ul>
+					<li><a href="#skills" class="current">Skills</a></li>
+					<li><a href="#timeline">Timeline</a></li>
+				</ul>
+			</nav>
+			<section class="skills">
+				<ul>
+					<li><a href="">#agile</a></li>
+					<li><a href="">#angularjs</a></li>
+					<li><a href="">#django</a></li>
+					<li><a href="">#rails</a></li>
+					<li><a href="">#requirejs</a></li>
+					<li><a href="">#sass</a></li>
+				</ul>
+			</section>
+			<section class="timeline">
+			</section>-->
+		</nav>
+	</header>
+	<main role="main" class="main">
+		<section class="objective">
+			<header class="main-header">Objective</header>
+			<p>Passionate about delivering an engaging and effective user experience via high-fidelity communication and expressive code, so that business goals can be met efficiently and maintainably.</p>
+			<p>Currently searching for a front-end and/or Ruby on Rails role to work with talented coworkers in a purposeful organization.</p>
+		</section>
+		<section ng-controller="ExperienceController" class="experience">
+			<header class="main-header">Experience</header>
+			<section ng-repeat="pos in positions" class="position">
+				<header class="position-header">{{pos.title}} at {{pos.organization}}</header>
+				<p ng-repeat="proj in pos.projects">{{proj.description}} {{formatSkills(proj)}}</p>
+			</section>
+		</section>
+	</main>
+</body>
+</html>
